@@ -24,6 +24,7 @@ add_executable(receiver
 
 file(GLOB_RECURSE FORMAT_SOURCES CONFIGURE_DEPENDS "src/*.c*") 
 file(GLOB_RECURSE FORMAT_HEADERS CONFIGURE_DEPENDS "include/*.h*")
+file(GLOB_RECURSE FORMAT_SCRIPTS CONFIGURE_DEPENDS "scripts/*.sh")
 
 
 function(generate_format_target)
@@ -33,6 +34,7 @@ function(generate_format_target)
 
     add_custom_target(format
         COMMAND clang-format -style=file -i ${FILES_LIST} --verbose
+        COMMAND shfmt -w -i 4 -ci ${FORMAT_SCRIPTS}
     )
 endfunction()
 
