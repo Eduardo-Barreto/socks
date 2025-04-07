@@ -5,7 +5,7 @@
 
 ![socks_logo](./socks.png)
 
-Sistema simples de transferêcnia de arquivos com raw sockets
+Sistema simples de transferência de arquivos com raw sockets
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-grammas-recipe.svg)](https://forthebadge.com)
